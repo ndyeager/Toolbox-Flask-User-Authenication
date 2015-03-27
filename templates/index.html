@@ -1,0 +1,96 @@
+{% extends 'layout.html' %}
+{% block main %}
+      
+  <div class="row">
+      <div class="bg">
+          <div class="grid fluid">
+            <div class="row">
+              <div class="container">
+                <div class="span7 home-container">
+                  <p class="header home-text">Student Toolbox</p>
+                  <br>
+                  <p class="subheader home-text">Student Toolbox is an interactive education tool that allows to teachers to extended learning outside of the classroom.</p>
+                  <br>
+                  <button class="command-button default">
+                    <i class="icon-share-2 on-right"></i>
+                    Learn, share and educate.
+                    <small>Interested in finding out more about Toolbox?</small>
+                </button>
+                </div>
+                {% if current_user.is_authenticated() %}
+                {% else %}
+                <div class="span4 offset1">
+                  <h1 class="text-warning">Signup!</h1>
+                  <p class="readable-text home-text"> Register for a toolbox account, it's Free!</p>
+                  <form action="/register" method="POST" role="form">
+                    <div class="input-control text">
+                      <input type="text" id="email" name="email" required="required"  placeholder="Email Address"/>
+                  </div>
+                  <div class="input-control password">
+                      <input type="password" id="password" name="password" required="required" placeholder="Password"/>
+                  </div>
+                  <div class="input-control password">
+                      <input type="password" id="confirm" name="confrim" required="required"  placeholder="Repeat Password"/>
+                  </div>
+                  <button type="submit"class="text-right success fg-white">Register</button>
+                  </form>
+                </div>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="row">
+    <div class="grid fluid">
+      <div class="container">
+        <div class="row">
+          <div class="container">
+              <h2 class="text-muted">What is the Student Toolbox?</h2>
+              <p class="subheader-secondary text-info"><small> Toolbox is an online education portal for teachers and students. We offer an array of education materials to assist teachers in developing students' science literacy and critical thinking skills inside and outside of the classroom. </small></p>
+          </div>
+        </div>
+        <div class"row">
+        <div class="grid fluid">
+          <div class="row">
+            <div class="span4 bg-amber padding20 text-center">
+                <h2 class="fg-white">Easy to Use</h2>
+            </div>
+            <div class="span4 bg-green padding20 text-center">
+                <h2 class="fg-white">Customizable Modules</h2>
+            </div>
+            <div class="span4 bg-red padding20 text-center">
+                <h2 class="fg-white">Absolutely Free!</h2>
+            </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+            <div class="grid no-margin">
+                <div class="row">
+                    <div class="span4 no-tablet-portrait no-phone">
+                        <div class="notice marker-on-right bg-lighterBlue padding20 text-center" style="height: 200px">
+                            <h1 class="fg-white" style="font-size: 120px; line-height: 80px; margin-bottom: 30px">5</h1>
+                            <p class="subheader-secondary fg-white">Key educational features to choose from</p>
+                        </div>
+                    </div>
+                    <div class="span8">
+                        <ol class="styled">
+                            <li style="width: 90%"><strong>Create</strong> Online Lessons, Materials and Discussion Boards</li>
+                            <li style="width: 90%"><strong>Execute</strong> Standards-based (CCSS and NGSS) animations and ready-made lessons</li>
+                            <li style="width: 90%"><strong>Customize</strong> and design lessons</li>
+                            <li style="width: 90%"><strong>Create</strong> develop and design assessments</li>
+                            <li style="width: 90%"><strong>Create</strong> track students' grades and progress</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+
+
+{% endblock %}

@@ -1,0 +1,171 @@
+{% extends 'layout.html' %}
+{% block main %}
+<br>
+<br>
+<br>
+
+<div class="container">
+	<div horizontal layout>
+	  <div class="span8"><p class="header text-info">{{current_user.first_name}} {{current_user.last_name}}</p></div>
+	</div>
+<br>
+<br>
+<br>
+	<div horizontal layout>
+		<div class="span12">
+    		<span><legend><p class="subheader text-warning">Classes</p></legend></span>
+    	</div>
+	</div>
+<br>
+
+	<div horizontal layout>
+		<div class="span3">
+    		<div class="listview">
+			    <a href="#" class="list small ribbed-darkCyan ol-transparent">
+			        <div class="list-content">
+			            <img src="/static/img/rocket.png" class="icon shadow cycle ol-transparent">
+			            <div class="data">
+			            	<span class="list-title item-title fg-white">6th Grade Physical Science</span>
+			            	<span class="list-remark item-title-secondary fg-white">Subject: Physical Science</span>
+			            	<span class="list-remark item-title-secondary fg-white">Period: 1st</span>
+			            	<div class="badge bg-red place-right shadow">12</div>
+			            </div>
+			        </div>
+			    </a>
+
+
+
+			    <a href="#" class="list small ribbed-darkCobalt ol-transparent">
+			        <div class="list-content">
+			            <img src="/static/img/calculator.png" class="icon shadow cycle ol-transparent">
+			            <div class="data">
+			            	<span class="list-title item-title fg-white">5th Grade Mathematics</span>
+			            	<span class="list-remark item-title-secondary fg-white">Subject: Math</span>
+			            	<span class="list-remark item-title-secondary fg-white">Period: 4th</span>
+			            	<div class="badge bg-red place-right shadow">2</div>
+			            </div>
+			        </div>
+			    </a>
+    		</div>
+    	</div>
+
+    	<div class="span3 offset1">
+    		<div class="listview">
+			    <a href="#" class="list small ribbed-darkGreen ol-transparent">
+			        <div class="list-content">
+			            <img src="/static/img/globe.png" class="icon shadow cycle ol-transparent">
+			            <div class="data">
+			            	<span class="list-title item-title fg-white">5th Grade Earth Science</span>
+			            	<span class="list-remark item-title-secondary fg-white">Subject: Earth Science</span>
+			            	<span class="list-remark item-title-secondary fg-white">Period: 2nd</span>
+			            	<div class="badge bg-red place-right shadow">5</div>
+			            </div>
+			        </div>
+			    </a>
+
+			    <a href="#" class="list small ribbed-darkCobalt ol-transparent">
+			        <div class="list-content">
+			            <img src="/static/img/calculator.png" class="icon shadow cycle ol-transparent">
+			            <div class="data">
+			            	<span class="list-title item-title fg-white">5th Grade Mathematics</span>
+			            	<span class="list-remark item-title-secondary fg-white">Subject: Math</span>
+			            	<span class="list-remark item-title-secondary fg-white">Period: 5th</span>
+			            	<div class="badge bg-red place-right shadow">4</div>
+			            </div>
+			        </div>
+			    </a>
+    		</div>
+    	</div>
+
+    	<div class="span3 offset1">
+    		<div class="listview">
+			    <a href="#" class="list small ribbed-darkGreen ol-transparent">
+			        <div class="list-content">
+			            <img src="/static/img/globe.png" class="icon shadow cycle ol-transparent">
+			            <div class="data">
+			            	<span class="list-title item-title fg-white">5th Grade Earth Science</span>
+			            	<span class="list-remark item-title-secondary fg-white">Subject: Earth Science</span>
+			            	<span class="list-remark item-title-secondary fg-white">Period: 3rd</span>
+			            	<div class="badge bg-red place-right shadow">16</div>
+			            </div>
+			        </div>
+			    </a>
+
+			    <a href="#" class="list ribbed-darkCyan ol-transparent">
+			        <div class="list-content">
+			            <img src="/static/img/rocket.png" class="icon shadow cycle ol-transparent">
+			            <div class="data">
+			            	<span class="list-title item-title fg-white">6th Grade Physical Science</span>
+			            	<span class="list-remark item-title-secondary fg-white">Subject: Physical Science</span>
+			            	<span class="list-remark item-title-secondary fg-white">Period: 6th</span>
+			            	<div class="badge bg-red place-right shadow">7</div>
+			            </div>
+			        </div>
+			    </a>
+    		</div>
+    	</div>`
+	</div>
+	<div horizontal layout>
+		<div class="span12">
+			<br>
+			<a href="/add_class" class="badge bg-indigo place-right shadow fg-white ol-transparent"><strong>+</strong> Add a Class</a>
+		</div>
+	</div>
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="container">
+	<div horizontal layout>
+		<div vertical layout>
+			<div class="span6">
+    			<span><legend><p class="subheader text-alert">Notications</p></legend></span>
+	    	</div>
+		</div>
+		<div vertical layout>
+			<div class="span4 offset2">
+    		<legend><p class="subheader text-info">Messages</p></legend>
+    		<div class="listview-outlook ol-transparent">
+			    <a href="#" class="list">
+			        <div class="list-content">
+			        		<span class="list-title item-title fg-darkCyan">ajohnson@gmail.com</span>
+			        		<span class="list-remark fg-lightBlue"><strong>Subject: </strong> I need help!!!</span>
+			        		<span class="list-remark fg-gray"><small><strong>Message: </strong>I really need help with the assignment, I don't understand it.</small></span>
+			        </div>
+			    </a>
+			   <a href="#" class="list">
+			        <div class="list-content">
+			        		<span class="list-title item-title fg-darkCyan">psmith@gmail.com</span>
+			        		<span class="list-remark fg-lightBlue"><strong>Subject: </strong> Extra Credit</span>
+			        		<span class="list-remark fg-gray"><small><strong>Message: </strong> Will there be any extra credit offered for this lesson?</small></span>
+			        </div>
+			    </a>
+			    <a href="#" class="list">
+			        <div class="list-content">
+			        		<span class="list-title item-title fg-darkCyan">beck93@gmail.com</span>
+			        		<span class="list-remark fg-lightBlue"><strong>Subject: </strong> Out of class tomorrow</span>
+			        		<span class="list-remark fg-gray"><small><strong>Message: </strong> Teacher, I will be out of class tomorrow. Can you assign any work for me to do?</small></span>
+			        </div>
+			    </a>
+			    <a href="#" class="list">
+			        <div class="list-content">
+			        		<span class="list-title item-title fg-darkCyan">bigDogg05@gmail.com</span>
+			        		<span class="list-remark fg-lightBlue"><strong>Subject: </strong> Make up work, PLEASE!!</span>
+			        		<span class="list-remark fg-gray"><small><strong>Message: </strong> I really need to make up the last test. Can I please retake it?</small></span>
+			        </div>
+			    </a>
+
+			    
+			</div>
+    	</div>
+		</div>
+	</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+{% endblock %}
